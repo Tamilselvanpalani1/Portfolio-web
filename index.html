@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+            <!---Bootstrap - css -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    
+    
+            <!---Bootstrap - Js -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+            <!--External Css-->
+            <link rel="stylesheet" href="css/portfolio.css">
+
+            <!--External Icons-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Navbar-Header -->
+    <header>
+        <div class="navbar navbar-expand-md navbar-dark bg-dark">
+          
+        <div class="container">    
+            <a href="#" class="navbar-brand">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDg0NFREWFhURFhYYHCggGBolHRUVITIkJzUrMi4vFyEzODMsNygtLisBCgoKDQ0OFRAPFyseFR0rLy0rKzctLSs3NysrLSsrKy4tLy0rLSsrKy0tLSstLTcrLS0rKy0tKystKy4tKy0rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAACAAEDBAUGBwj/xABFEAACAgEBBAYDDAgEBwAAAAAAAQIRAwQFEiExBhNBUWFxIqHBIzIzNUJidIGCkbGzBxQVJFJyc7JD0eHwU2NkkqLCw//EABoBAQEBAQEBAQAAAAAAAAAAAAABAwIEBQb/xAAmEQEBAQACAQQCAQUBAAAAAAAAAQIDETESIUFxMlFhFCIjQvAT/9oADAMBAAIRAxEAPwDrUNBQkfl32SRogIaIEhoCGiBoSChIimhIKGgEhIKGiKSGgIaIEhoCGiKSGgoSIEhoKEiKSEkUhogiQqIhJEBopodFMDNoDRowsoBCyFHjEJBQkehmaGgIaIEhoCGiBoSChIimhoCGgEhoCGiKSGgIaIGhICGiKaEgoSIGhIKEiKaGgISZBohICEmQJgZdhbApgkJgZRCFEKPFoaAho9DMkaIzQ0QNDQEJEGiEgIaIpoSAhoBoSAi94itExRd8Fz7DCLlKSjBOUpOlFcW2eq0ew3p8TyZqeaUJNR5rHGvxHSXUjz8WNGGKVo3ic10aEgIaIGhICEmRTQ0zNMSYGiZdmaZdkDsqyrKbAtsDI2U2UQhRAPGoSAho9DM0OJmhxIGhoCEgNEJAQkcq0QrBYMmRJNt0krb7kOhq5nI0Wiy6jjBbuO6eWXCC8F/E/Beo87o+mejwzfXaCeem93J+spxq+D6pwSf1yZ6zZHSj9oxctHgnn6uUceTE49Rkw2m48nKG7wfJ8OFpWr13w8mc+rpxNy3p6TYuhwabjBb+R8Hkl75+C7kdnruOPI3z3JfgcPZ2hzvdnkhHE+e48m/X1pHafqW8nGeR1JNNQilwfi7MszV8ud6zL5fMNNk4I5cZnt8XRHQRVLHN+eSbLn0T0b5QkvLJI6vHU/qMPFKRomel1HQ+H+FmnF90kpr2M6bXbE1WntuG/BfKx26XiuZxcWNM8udeK4qY0zjxmapnHTRomKzNMSZFOy7BZLAdlWGyWBbZTZVlNgXZA2QDx6GgISPQzaISAhIDRCQENEDQrM7Ms2Xdi3V0m6XaOuxyHMrDgy55dXhg8ku1LlFd7b4RXizjbH25hcVDNDTdbFunnqEMsbtem3uxkuXpcHw43z9rsrNlyQt4oYMXDq445RlGfzlu8KGu8eYT3+XB2f0L0nCWtUNTPn1aVYYvxfvp+peZ3uo2xpNBCOKKhBQVQ0+nhGO6u5RVKPqOv2hqcivHjdP5Ulzj4LxOj1WDHghPJl9Oah1scClWXLF5Iw3m3e7HekuL58aTp1zN737VfRme9dhqel+syvd02JY75ei82Su/uX3M6rNtHW5ZqGTWtTk1FY/1mMG2+zcg/YdHqM+pz2pS6vE/8DCnDH9rtm/GTZyNkaDdzYXXLJB+s06k+U7k8Rp1sJcXrMDffLM165Uc7RR1XPT6icq7dNqesrz3JM8rHQJpcXy8DLJs+cWpQfFO0/eyT8Gaeifs9d/T6Zs3pNtDE0sko6iK5rJFKX1Sj7bPXbL29i1NLjjyduOdcfJ9v++B8Z2V0qz4JrHrFLUYuCcpcdRjXfGb9+vCV+DR9D0eHHlhDLhkp45pTxzjdNdj8H+Bnv18f8xnePj38dV3e2NhYdQnPFWLN3rhGb7mvaePyQnjnLHki4zi6aZ7PSamW7U+a7e9HX9JNIs2LrYr3XEm+HOePtj7V/qZ2ymPVn2vh55MVnHxTtGyZnY3Oy7BZLCnZVhslgKwtlWVYQrIGyAeSQkBCRuzaISAhIK0Q0ZoaIEYZjcGSJYPObR0EJNyTce1pcn/AJH1zo3jj+z9FupKK0uBUuxqCv12fNNbjtOu49Z+jfb0JQ/Z+WSjki5S01uusi3vSxr5ydtLtT8DTk73j6cfje3f69w02HNqcquGKLm48t+TaUYX4yaX1nzvYepyavW7SyZpb056XE32JL9YxVFLsS7j6N0500smzc6grcHjzSS7ccJXL7l6X2T5x0LX77r1/wBHi/OxDizJx6vz05urdT7egxaJdxz9No1Fp1yaZydDhuVeDOxlgSi33Jnkuq9PUeCwYLS8hZNMb6XkjkuJtdXtn083tDQqcWuTXvX3M9F+ifaT3tRoMnKCefEn8nju5I+VuL+tnD1WMz6FwcNs2uT0uWUvK4r8aNpr1Y1K41Pd9Xmo0651w8zgR1Jo8xxHjPHq/ppideXl2lDJkguUMk4x/lTdeqjZM4+oleozV/xZr7nXsNYs6rprZdmdl2QOyrDZLAVlWGyrAVkDZYHlEJAQkbs2iEgISIrRCTM0NMDREYUxIg4ueFnSa7SST38d2ndJ0012rxPRyjZxsuE1xvpzZ2vZf6S9dpksepxw1kY8E8reHUJeM0nvfaTficrorrNHqtfrM2kwZdMp6OPWYZzhPHGXX4vg2qaXPg+XZ3LqM+mT5xT80mc7oBBLaGtikkv1OHBKl8NjN9XNxuye/TL09an2+gbNx+n9lnY58dQn/LL8DjbMXun2Wdjq4+5ZP5JfgfNk7enV6r5rpXwXkcuzg6aXBeRyJZDWz3RnqXwOw6H7PcZ59W18Io4MXjji7nLycqX2GXsfYmTWSUpJw06fpT5OfzYd/n2eo9vi0UYxUYxUYxSjGK5RiuSFtmbJ8ue524OKMpSS+/yNdXOOLHPLLlCLk/Guw5+PFFeZ5XpntFejpMbt2p5q7F2R9v3HGcLdd10Gnbbcnzk235vizmRZxcCo5CZdOmlksNksgVksNksBWVYbJYCsgLIB5hCQExI2cGhozQkyDRCTAmJBTTGmZpiTINCmiJl2BxdRA06CfGWu+hQ/Nxh1A+gnxlrvoUPzcZtn8N/TjXmfb6Nspe6/ZkdvmwSnCcY85Rkl3W0dRsqLeWoy3XuSp0pU+HY+Ydqa7bGmTlGOHPiXy8WF7yXjC7X1Webjk69zk79XUdZo+gOZV1moil2qGNt/e2d7oOh+lxU5Rlmku3K7X/auB5+XSXakuycF/QUfW0cPU7ezP4fWwgu1T1WOP/hF36jX2+J2lxyfNke/1GbBhVTnFNLhCNOX3I6vUbT33UVux7u1+Z8/z9KdHi5ZMmol/DgxuMW/GeSq+pM6rV7e1+r9DHWiwvg+rblnku5zdP7lEf8AnvX8Qmc5+e69j0g6Wx07en0+7l1b4bvOGnX8eRrl/LzfhzPN6aEm3KcnOcm5TnL30pPm2cLZ+hjjVRVXxbfFyfe2dtijQ11mdR3I3gOwJl2ZOzslgsuyBWSw2VYDsqw2SyhWQFkA80hpmaEmauGiEmZoSYGiYkzNDTIppiTAmJMDRMszTFZBjnfA16B/GWu+hQ/NxmGd8DfoF8Y676HD83GbZ/Df0415n2+lbEXu/wBiXsO52jH3DN/Syf2s6nYK93+xL2Hd7Sj+75/6WT+1mPFP7GfPf8kfnXHorS5cl8k3hs5dtv1HY6bDwXkcuGFG15GvTr8GijHlFLxric/FpzeONGkUZ63asiY4UbICFZm6OyWCy7AdksFl2ArJYbKsBWSw2SwFZQbIQecTEmZpjTNnLRMSZmmJMg0TEmZoSYGiYkzNMSZFaJl2BMuwMc7OV0C+MNb9Dj+bjOJnZzOgK/f9Z9Ej+bjNJ+G/pxfM+30vYTrPfzJew7naWS8GZf8AKyf2s6HZk1HKm3VqSXi6uvUzs9VLfxziucoSivrRjxXrDjmz3ySvkOl5LyOWjivFPDJ48sZQnHg1JVy7u9G8ZHVbRqi7AmXZyp2XYLLsgdksFl2A7JYLJYDslgslgKyWGyrAdkBZAPPJiTM0xJmrlomJMzTGmBomWmZpjTIGmJMzTEmBomXYEy7IrLOzsP0fq9dq/oi/NxnW52dt+jmN6/VfRP8A64zT/TX05+Y9XtzE3ihGLak8sZJxbTW6m7T7ONCx7Ry4MTyanPCOOC9LJlpJLxfacfpRtvT6FRnlvJkknHT6eHwmV9r+bHvk/W+B841+o1GvyLLq5Wou8Wnhww4V4L5T8X+HAy4uK2d29Z/7w63qePNep2n09yZ28ehwqceT1GeHovxjB/8At9x1+LLkl6WWe/kfGUqjFX4JJJI4OnxVXDgjm40aa68SOY3TLsCZdmbo7LsFksg0slgslgOy7BZLAdksFksKVksFksIdlBsgHn0xJgTLTNXLRMSYEy0yK1TLTM0xJgaJiTM0xJkGiZdgTLAzzD2Btr9n59Tkjj63Lk0zxYYO1DrHOD3pvsikm/HkuYZIyWFW3XF1b7zTNk8ubGMlkzZZ5883lz5Pf5Jd3ZGK+TFdiRy8WKi4QNok1u1ZOlxiaIKZdmbo0y7BZLA0suzOy7INLJZnZdgOyWCyWA7JYLJYDslgslgKyAsgHRCTCQ1cNEy0wJlpkVomJMzTEmRWiYkzNMSYDTEmZpiTIGRBTLsBoSZnYkwHZdgsuyKdl2CyWBpZLBZdgOyWCy7AVksNksBWSw2SwFZLDZVgOyAsgHTkIQ0cIJMJAGmJMzTEmRTTEmZpiTINEy0zNMSYVomWmZplpkGiZdgsuwHZdgsuwHZdgslgOy7BZLA0slgslkDslgslgOyWCyWA7JYLJYCsgbIUdYQhDtyhCEAgkQgVaLRZCC0WQhFItEIBaLLIQQtEIBZZCAWiEIBCyEAhCEAhCEAhTLIBRCEA/9k=" width="30" height="30" alt="logo" loading="lazy" class="d-inline-block align-top img-thumbnail">
+                My Portfolio</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project-gallery" class="nav-link">Project Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+        </nav>
+    </header>
+
+    <!--Main-->
+    <div class="container">
+        <div class="row mt-5" id="home">
+
+            <!--Content about me-->
+            <div class="col-sm-6 text-center mb-5">
+                <div class="main-cont">
+                    <h1>Hello,I'm</h1>
+                    <p>Tamilselvan</p>
+                    <h4>WEB DESIGNER</h4>
+                    <form action="">
+                        <input type="button" value="My Work" class="btn btn1 mr-2 mt-2">
+                        <input type="button" value="Hire Me" class="btn btn-primary mt-2">
+                    </form>
+                </div>
+             </div>
+
+            <!--Image-->
+            <div class="col-sm-6 mt-3">
+                <img src="https://eumaxindia.com/wp-content/uploads/2023/07/Web-Development.png" alt="" class="img-fluid" width="600px">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="about-me" id="about">
+    <div class="container">
+        
+            <div class="row mt-5 float">
+                <!--about me-->
+                <div class="col-sm-6 text-center mb-5">
+                    <img src="https://images.squarespace-cdn.com/content/v1/57baef93cd0f68daca6084ae/bd19c688-d7de-4d99-a338-7bc1046f161a/mens+stylist+image+consultant+pivot+image+patrick+kenger+founder.png" alt="" class="img-fluid img-thumbnail mt-5" height="200px" width="400px">
+                 </div>
+    
+                <!--Content-->
+                <div class="col-sm-6 mt-sm-5 pb-2">
+                    <h3>About Me</h3>
+                    <b><h5 class="about">WEB DESIGER </h5></b>
+                    <h5 class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae laudantium sequi est facilis omnis repellat provident molestiae atque sit, quae, consequatur quaerat? Voluptates corrupti impedit modi nam fugit labore!</h5>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+<!--Project Gallery-->
+<div class="project-gallery mt-3" id="project-gallery">
+    <div class="container">
+        <h1 class="text-center">Our Projects</h1>
+        <div class="row mt-3 text-center">
+            <div class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="loginform-css.html" target="_blank"><img src="images/login-form.png" alt="" width="100%"></a>
+                    </div>
+                    <div class="card-body">
+                        It was developed by HTML , CSS.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="zomatologin.html" target="_blank"><img src="images/zomato-login.png" alt="" width="100%"></a>
+                    </div>
+                    <div class="card-body">
+                        It was developed by HTML , CSS.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="forms.html" target="_blank"><img src="images/map.png" alt="" width="100%"></a>
+                    </div>
+                    <div class="card-body">
+                        It was developed by HTML , CSS and Bootstrap.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 text-center">
+                <div class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="Register-form.html" target="_blank"><img src="images/register.png" alt="" width="100%"></a>
+                        </div>
+                        <div class="card-body">
+                            It was developed by HTML , CSS and Bootstrap.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="courses.html" target="_blank"><img src="images/card.png" alt="" width="100%"></a>
+                        </div>
+                        <div class="card-body">
+                            It was developed by HTML , CSS and Bootstrap.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="scrollspy-list.html" target="_blank"><img src="images/scrollspy-list.png" alt="" width="100%"></a>
+                        </div>
+                        <div class="card-body">
+                            It was developed by HTML , CSS and Bootstrap.
+                        </div>
+                    </div>
+                </div>
+    
+
+        </div>
+    </div>
+</div>
+
+<!--Resume-->
+<div class="resume pb-3" id="resume">
+    <div class="container">
+        <h1 class="text-center">
+            Resume
+        </h1>
+        <img src="images/resume.jpeg" alt="" class="img-fluid img-thumbnail mx-auto d-block">
+    </div>
+</div>
+
+<!--contact-->
+<div class="contact mb-3" id="contact">
+    <div class="container">
+        
+            <h1 class="text-center">Contact Me</h1>
+    
+            <div class="row">
+                <!--Form col->2-->
+                <div class="col-sm-6">
+                    <div class="card">
+                         <div class="card-header">Contact Page</div>
+                         <div class="card-body">
+                            <form action="#" method="POST">
+                                <!--name [text]
+                                number [number]
+                                email [email]
+                                message [textarea]
+                                source [select]
+                                button [button]-->
+                                <div class="form-group">
+                                    <label for="name">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                </div>  
+    
+                                <div class="form-group">
+                                    <label for="emial">Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="You@gmail.com">
+                                <small>We'll never share your email with anyone.</small>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" cols="" rows="3" placeholder="Enter any message" class="form-control"></textarea>
+                                </div>
+    
+                                <div class="form-group text-center">
+                                    <div for="from-check">
+                                        <input type="checkbox" name="agreement" id="agreement" value="agreement" class="form-check-input">
+                                        <label for="agreement" class="form-check-label">I agree to terms & condiotions</label>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                </div>
+    
+                            </form>
+                         </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="https://www.libertyhealthshare.org/hubfs/Images/Website%20Images/Contact%20Info_1.png" alt="" class="img-fluid p-5 footer-img">
+                </div>
+
+            </div>
+    </div>
+</div>
+
+<!--Footer-->
+<div class="footer p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 class="footer-greetings text-center">Thanks For Visiting My Wesite</h1>
+            </div>
+            <div class="col-sm-4">
+                <ul class="text-center">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#project-gallery">Project Gallery</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul class="ml-5 p-3 text-center">
+                    <li><a href="https://www.instagram.com/tamil7_t.s/?next=%2F"><i class="fa-brands fa-instagram fa-lg mr-2" style="color: rgb(223, 22, 146);"></i>Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/tamilselvan-palani-172335263/"><i class="fa-brands fa-linkedin fa-lg mr-2" style="color: rgb(5, 5, 117)"></i>Linkedin</a></li>
+                    <li><a href="https://github.com/Tamilselvanpalani1/Project"><i class="fa-brands fa-github fa-lg mr-2"></i>Github</a></li>
+                    <li><a href="https://www.facebook.com/tamilanda.tamilanda.5220"><i class="fa-brands fa-facebook fa-lg mr-2" style="color: rgb(8, 8, 151);"></i>Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<h5 class="bg-dark fo p-3 text-center">Copyright &copy; 2023 Tamilselvan</h5>
+
+
+</body>
+</html>

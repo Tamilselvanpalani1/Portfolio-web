@@ -1,0 +1,69 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn1{
+    background-color: crimson;
+    color: aliceblue;
+}
+.main-cont{
+    margin-top: 100px;
+}
+p{
+    font-size: 60px;
+    font-weight: bolder;
+}
+h4{
+    text-decoration: underline;
+}
+img[height*="200px"]{
+    box-shadow: 1px 2px 5px gray;
+}
+.about-me{
+    background-color: gray;
+}
+h5{
+    color: crimson;
+    font-size: 30px;
+}
+h3{
+    font-size: 50px;
+}
+.para1{
+    color: whitesmoke;
+}
+h1{
+    font-size: 50px;
+    text-shadow: 2px 2px 2px gray;
+}
+.card-body{
+    font-weight: bolder;
+
+}
+.resume{
+    background-color: gray;
+}
+.footer{
+    background-color: gray;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.fo{
+    font-size: 15px;
+    color: white;
+}
+.footer-greetings{
+    color: black;
+    font-family: cursive;
+    font-size: 45px;
+}
+
+
